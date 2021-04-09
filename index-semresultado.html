@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-js">
+  <!-- #S Head -->
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>RPA seguralta</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700%7COpen+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- Seguralta RPA Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/SeguraltaRpaStyles.css">
+
+  </head>
+  <!-- #E Head -->
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>        
+      <nav class="navbar navbar-expand-lg navbar-img bg-img">
+        <div class="container">
+          <a class="navbar-brand col-md-3" href="#"><img src="assets/img/logo-seguralta.png"></a>
+          <span class="col-md-9"><h1>RPA Seguralta</h1></span>
+        </div>
+      </nav>        
+    </header>
+
+    <main role="main">
+      <div class="container">
+
+        <!-- #S Abas navegação -->
+        <nav class="row">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="consultaLog-tab" data-toggle="tab" href="#consultaLog" role="tab" aria-controls="consultaLog" aria-selected="true">Consulta log</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- #E Abas navegação -->
+
+        <form class="row consultaLog-form" action="" method="post">
+          <div class="tab-content bg-light col-12">
+            <div class="tab-pane fade show active" id="consultaLog" role="tabpanel" aria-labelledby="consultaLog-tab">
+              
+              <div class="row mb-4">
+                <div class="col-md-6">
+                  <label>Selecione o processo </label></br>
+                  <select class="multiselect-filter" multiple="multiple">
+                    <option value="opcao1">opcao 1</option>
+                    <option value="opcao2">opcao 2</option>
+                    <option value="opcao3">opcao 3</option>
+                    <option value="opcao4">opcao 4</option>
+                    <option value="opcao5">opcao 5</option>
+                    <option value="opcao6">opcao 6</option>
+                  </select>
+                </div> 
+
+                <div class="col-md-3">
+                  <label>Data inicial</label></br>
+                  <div class="input-group datepicker">
+                  <!-- PERÍODO -->
+                    <span class="fa-stack fa-2x">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <input class="form-control" name="registration_date" id="registration-date" type="date">
+                  </div>
+                </div>
+                                <div class="col-md-3">
+                  <label>Data final</label></br>
+                  <div class="input-group datepicker">
+                  <!-- PERÍODO -->
+                    <span class="fa-stack fa-2x">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <input class="form-control" name="registration_date" id="registration-date" type="date">
+                  </div>
+                </div>
+
+              </div><!-- row -->
+
+              <div class="row mb-4">
+                <div class="col-md-6">
+                  <label>Filtrar por seguradoras</label></br>
+                  <select class="multiselect-filter" multiple="multiple">
+                    <option value="opcao1">opcao 1</option>
+                    <option value="opcao2">opcao 2</option>
+                    <option value="opcao3">opcao 3</option>
+                    <option value="opcao4">opcao 4</option>
+                    <option value="opcao5">opcao 5</option>
+                    <option value="opcao6">opcao 6</option>
+                  </select>
+                </div> 
+
+                <div class="col-md-4">
+                  <label>Filtrar por status</label></br>
+                  <select class="multiselect-filter" multiple="multiple">
+                    <option value="opcao1">opcao 1</option>
+                    <option value="opcao2">opcao 2</option>
+                    <option value="opcao3">opcao 3</option>
+                    <option value="opcao4">opcao 4</option>
+                    <option value="opcao5">opcao 5</option>
+                    <option value="opcao6">opcao 6</option>
+                  </select>
+                </div> 
+
+                <div class="col-md-2">
+                  <button type="button" class="btn bg-seguralta search-btn col-12">Buscar</button>
+                </div>
+
+              </div><!-- row -->
+
+  <!-- <div class="form-group has-search">
+    <input type="text" class="form-control" placeholder="Search">
+    <span class="fa-stack fa-2x">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
+    </span>
+  </div> -->
+
+            </div><!-- #E ConsultaLog-tab -->           
+
+            <!-- Future tabs possibility -->
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+
+          </div><!-- #E tab-content -->
+        </form>
+      
+      </div><!-- #E Container -->
+    </main>
+
+    <!-- #S JAVASCRIPTS -->
+    <!-- Global Vendor -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!--  Multiselect fields -->
+    <script src="assets/js/bootstrap-multiselect.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.multiple-checkboxes').multiselect({
+          includeSelectAllOption: true,
+        });
+        $('.multiselect-filter').multiselect({
+          enableFiltering: true,
+          includeSelectAllOption: true,
+        });
+      });
+    </script>
+
+    <!-- Datepicker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/locale/pt-br.js"></script>
+
+    <!-- #E JAVASCRIPTS -->
+  </body>
+  <!-- #E Body -->
+</html>

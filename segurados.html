@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-js">
+  <!-- #S Head -->
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- O título não é somente para a página, também está configurado para ser o título do arquivo exportado ( tornar dinâmico após | ) -->
+    <title>RPA seguralta</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+
+    <!-- Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700%7COpen+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <!-- DataTables Styles -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css"/>
+
+    <!-- Seguralta RPA Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/SeguraltaRpaStyles.css">
+  </head>
+  <!-- #E Head -->
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>        
+      <nav class="navbar navbar-expand-lg navbar-img bg-img">
+        <div class="container">
+          <a class="navbar-brand col-md-3 col-sm-4" href="index.html"><img src="assets/img/logo-seguralta.png"></a>
+          <span class="col-md-9"><h1>RPA Seguralta</h1></span>
+        </div>
+      </nav>        
+    </header>
+
+    <main role="main">
+      <div class="container">
+
+        <!-- #S Abas navegação -->
+        <nav class="row">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Consulta log</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="importacao.html">Importação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notificacoes.html">Notificações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="segurados.html">Segurados</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- #E Abas navegação -->
+
+        <div class="tab-content bg-light row pl-1 pr-1" id="nav-tabContent">
+          
+          <!-- ABA SEGURADOS -->
+          <div class="col-12">
+            
+            <form class="segurados-form" action="" method="post">
+              <!-- #S FILTRO SEGURADOS -->
+              <div class="row mb-4">
+
+                <div class="col-md-3">
+                  <label>Nome</label></br>
+                  <div class="input-group">
+                    <span class="fa-stack fa-2x">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-user fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <input class="form-control" name="segurado_nome" id="" type="text">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label>CPF</label></br>
+                  <div class="input-group">
+                    <span class="fa-stack fa-2x">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-user fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <input class="form-control" name="segurado_nome" id="" type="text">
+                  </div>
+                </div>
+
+                <div class="col-md-2 form-group">
+                  <label>Estado</label></br>
+                  <select class="form-control input-lg">
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                
+                <div class="col-md-4 form-group">
+                  <label>Cidade</label></br>
+                  <select class="form-control input-lg">
+                    <option value="">Cidade</option>
+                    <option value="">Cidade</option>
+                    <option value="">Cidade</option>
+                    <option value="">Cidade</option>
+                    <option value="">Cidade</option>
+                    <option value="">Cidade</option>
+                    <option value="">Cidade</option>
+                    <option value="">Cidade</option>
+                    <option value="">Cidade</option>
+                    <option value="">Cidade</option>
+                    <option value="">Cidade</option>
+                    <option value="">Cidade</option>
+                    <option value="">Cidade</option>
+                    <option value="">Cidade</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-md-6">
+                  <label>Selecione o franqueado </label></br>
+                  <select class="multiselect-filter" multiple="multiple">
+                    <option value="opcao1">MELVIN CORRETORA DE SEGUROS LTDA</option>
+                    <option value="opcao2">NOGUEIRA & NOGUEIRA CORRETORA DE SEGUROS LTDA</option>
+                    <option value="opcao3">GRUPO NOSSA CORRETORA DE SEGUROS LTDA</option>
+                    <option value="opcao4">SEGURACRE CORRETORA DE SEGUROS - EIRELI - ME</option>
+                    <option value="opcao5">ALTA SEGUROS LTDA</option>
+                    <option value="opcao6">Heber Januario de Carvalho</option>
+                  </select>
+                </div> 
+            
+                <div class="col-md-2 offset-md-4">
+                  <button type="button" class="btn bg-seguralta search-btn col-12" data-toggle="collapse" href="#collapseResultadoSegurados">Buscar</button>
+                </div>
+
+              </div>
+            </form>
+
+
+          <!-- #S RESULTADO DA NOTIFICAÇÕES -->
+          <div class="row"><div class="collapse col-12" id="collapseResultadoSegurados">
+
+              <!-- #S Tabela resultado -->
+              <table id="datatableSegurados" class="table bTable table-striped nowrap" style="width:100%; ">
+                  <thead>
+                      <tr>
+                          <th>Nome</th>
+                          <th>CPF</th>
+                          <th>Cidade / Estado</th>
+                          <th>Franqueado</th>
+                          <th>&nbsp;</th>
+                      </tr>
+                  </thead>
+                <div class="borderTable">
+                  <tbody class="tbodySegurados">
+                    <!-- js abaixo -->
+                  </tbody>
+                </div>
+
+              </table>
+              <!-- #E Tabela resultado -->
+
+          </div></div>
+          <!-- #E RESULTADO DA NOTIFICAÇÕES -->
+          </div>
+        </div><!-- #E tab-content -->
+
+
+
+      </div><!-- #E Container -->
+    </main>
+
+
+  </body>
+  <!-- #E Body -->
+
+  <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <span>Copyright © Seguralta - Todos os direitos reservados | Dados sigilosos e protegidos perante lei. </span>
+            </div>
+        </div>
+    </div>
+
+  <!-- #S JAVASCRIPTS -->
+  <!-- Global Vendor -->
+  <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+  <!--  Multiselect fields -->
+  <!-- arquivo local porque versão original foi modificada -->    
+  <script src="assets/js/bootstrap-multiselect.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.multiple-checkboxes').multiselect({
+        includeSelectAllOption: true,
+      });
+      $('.multiselect-filter').multiselect({
+        enableFiltering: true,
+        includeSelectAllOption: true,
+        maxHeight: 400,
+      });
+    });
+  </script>
+
+  <!-- Datepicker -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/locale/pt-br.js"></script>
+
+  <!-- DataTables -->
+  <!-- arquivo local porque foi traduzido -->
+  <script src="assets/js/jquery.dataTables.js"></script>
+
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>    
+
+
+  <script src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
+
+
+  <script>
+  $(document).ready(function() {
+    $('#datatableSegurados').DataTable( {
+      dom: 'lrtip',
+      responsive: true ,
+      "order": [[ 1, "desc" ]],
+      "aoColumnDefs": [
+          { 'bSortable': false, 'aTargets': [ 4 ] },
+       ]
+    } );
+    new $.fn.dataTable.FixedHeader( table );
+  });
+
+
+  </script>
+
+
+  <script>
+  var i = 1;
+  while(i <= 50){
+    $(".tbodySegurados").append(`
+    <tr>
+        <td>Airi Satou</td>
+        <td>123.456.789-12</td>
+        <td>São José do Rio Preto - SP</td>
+        <td>NOGUEIRA & NOGUEIRA CORRETORA DE SEGUROS LTDA</td>
+        <td class="info"><a href="segurados-info.html"><i class="fas fa-plus-circle"></i></a></td>
+    </tr>
+    <tr>
+        <td>Angelica Ramos</td>
+        <td>123.456.789-12</td>
+        <td>São José do Rio Preto - SP</td>
+        <td>NOGUEIRA & NOGUEIRA CORRETORA DE SEGUROS LTDA</td>
+        <td class="info"><a href="segurados-info.html"><i class="fas fa-plus-circle"></i></a></td>
+    </tr>
+    <tr>
+        <td>Ashton Cox</td>
+        <td>987.654.321-98</td>
+        <td>São José do Rio Preto - SP</td>
+        <td>NOGUEIRA & NOGUEIRA CORRETORA DE SEGUROS LTDA</td>
+        <td class="info"><a href="segurados-info.html"><i class="fas fa-plus-circle"></i></a></td>
+    </tr>
+    <tr>
+        <td>Bradley Greer</td>
+        <td>123.456.789-12</td>
+        <td>São José do Rio Preto - SP</td>
+        <td>GRUPO NOSSA CORRETORA DE SEGUROS LTDA</td>
+        <td class="info"><a href="segurados-info.html"><i class="fas fa-plus-circle"></i></a></td>
+    </tr>
+    <tr>
+        <td>Brenden Wagner</td>
+        <td>123.456.789-12</td>
+        <td>São José do Rio Preto - SP</td>
+        <td>SEGURACRE CORRETORA DE SEGUROS - EIRELI - ME</td>
+        <td class="info"><a href="segurados-info.html"><i class="fas fa-plus-circle"></i></a></td>
+    </tr>    
+    <tr>
+        <td>Caesar Vance</td>
+        <td>123.456.789-12</td>
+        <td>São José do Rio Preto - SP</td>
+        <td>MELVIN CORRETORA DE SEGUROS LTDA</td>
+        <td class="info"><a href="segurados-info.html"><i class="fas fa-plus-circle"></i></a></td>
+    </tr>        
+    `);
+    i++;
+  }
+  </script>
+
+
+  <!-- #E JAVASCRIPTS -->
+  </footer>
+
+</html>

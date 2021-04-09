@@ -1,0 +1,617 @@
+/*------------------------------------
+  Default Styles for seguralta RPA
+------------------------------------*/
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+html {
+  height: 100%;
+}
+body {
+	position: relative;
+	min-height: 100%;
+	font-family: roboto;
+	background-color: #eeeeee;
+	margin:0px;
+}
+main {
+	padding-bottom: 100px;
+}
+h1 {
+	color:#FF8908;
+	font-weight: 300;
+}
+h2 {
+	color:#373737;
+	font-size: 24px;
+}
+
+ /* 1st navbar */
+ .bg-dark {
+ 	background-color: #212529!important;
+ }
+ .bg-light {
+ 	background-color: #F6F6F6!important;
+ }
+
+ .bg-white {
+ 	background-color: #FFFFFF!important;
+ }
+ .bg-lightOrange {
+ 	background-color: #F9EED8!important;
+ }
+.bg-darkGray {
+ 	background-color: #66737f!important;
+ 	color: #fff;
+ }
+
+ .bg-seguralta {
+ 	background-color: #FF8908!important;
+ 	color: #fff;
+ }
+ .navbar-dark{
+ 	height: 40px;
+ }
+ .navbar-brand {
+ 	height: 112px;
+ 	/*width: 260px;*/
+ 	margin-top: -48px;
+ 	/* Gradient */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 41%, #e8e8e8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ffffff 41%,#e8e8e8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ffffff 41%,#e8e8e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+ }
+ .navbar-brand img {
+ 	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8%;
+ }
+  /* 2nd navbar */
+ .bg-img {
+ 	background: url('../img/bg-title.jpg') center center;
+ }
+ .navbar-img {
+ 	height:100%;
+ }
+
+.nav-tabs {
+	margin-top: 50px;
+	margin-left: 20px;
+}
+.nav-tabs .nav-item .nav-link, .nav-tabs .nav-link {
+	border-color: transparent!important;
+	background-color: #C9C9C9;
+	color: #fff;
+}
+.nav-tabs .nav-link:hover {
+	color: #FF8908;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	border-color: transparent!important;
+	background-color: #F6F6F6;
+	color: #212529;
+}
+
+.nav-link {
+	font-weight: bold;
+	font-size:24px; 
+	line-height: 24px;
+}
+.tab-content {
+	border-radius: 6px;
+	padding: 20px;
+}
+
+.result-content {
+	border-radius: 6px;
+	padding: 20px;
+	margin-top: 55px;
+}
+
+/* CONSULTA LOG FORM STYLES */
+.consultaLog-form label{
+	font-size: 14px;
+	margin-left: 20px;
+}
+.consultaLog-form .btn-group {
+	width: 100%;
+	border: solid 1px #C4C4C4;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+}
+.consultaLog-form .multiselect {
+	font-size: 14px;
+	color: #919191;
+	text-align: left!important;
+	padding: 6px 20px!important;
+}
+
+.consultaLog-form .multiselect-container {
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.consultaLog-form .multiselect .fas{
+	float: right;
+	font-size: 18px;
+	line-height: 24px;
+	color: #FF8908;
+}
+.consultaLog-form .dropdown-toggle::after {
+	content: none!important;
+}
+.consultaLog-form input.multiselect-search {
+	border:none!important;
+}
+.consultaLog-form .input-group-addon .fas{
+	line-height: 38px;
+}
+
+.consultaLog-form .multiselect-item .input-group{
+	border-bottom: solid 1px #999;
+	margin-bottom: 10px;
+}
+.consultaLog-form .multiselect-item a{
+	color:#212529!important;
+}
+.consultaLog-form .multiselect-container .checkbox{
+	color:#212529!important;
+}
+.fa-stack + .form-control {
+	padding-left: 50px !important;
+	border-radius: 4px !important;
+	/*padding: 19.5px;*/
+}
+.search-btn {
+	margin-top: 32px;
+	border:solid 1px #C4C4C4;
+}
+.search-btn:hover {
+	opacity: 0.8;
+}
+
+/* IMPORTACAO DADOS FORM STYLES */
+.importacaoDados-form label{
+	font-size: 14px;
+	margin-left: 20px;
+}
+.importacaoDados-form .btn-group {
+	width: 100%;
+	border: solid 1px #C4C4C4;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+}
+.importacaoDados-form .custom-file-label::after {
+	    content: "Procurar"!important;
+}
+
+/*Input with Icon to the right */
+.has-search .form-control {
+	border: solid 1px #C4C4C4;
+    padding-left: 50px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+/* SEGURADOS FORM STYLES */
+.segurados-form label{
+	font-size: 14px;
+	margin-left: 20px;
+}
+.segurados-form .btn-group {
+	width: 100%;
+	border: solid 1px #C4C4C4;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+}
+.segurados-form .multiselect {
+	font-size: 14px;
+	color: #919191;
+	text-align: left!important;
+	padding: 6px 20px!important;
+}
+
+.segurados-form .multiselect-container {
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.segurados-form .multiselect .fas{
+	float: right;
+	font-size: 18px;
+	line-height: 24px;
+	color: #FF8908;
+}
+.segurados-form .dropdown-toggle::after {
+	content: none!important;
+}
+.segurados-form input.multiselect-search {
+	border:none!important;
+}
+.segurados-form .input-group-addon .fas{
+	line-height: 38px;
+}
+
+.segurados-form .multiselect-item .input-group{
+	border-bottom: solid 1px #999;
+	margin-bottom: 10px;
+}
+.segurados-form .multiselect-item a{
+	color:#212529!important;
+}
+.segurados-form .multiselect-container .checkbox{
+	color:#212529!important;
+}
+/* remove the original arrow */
+.segurados-form select.input-lg {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  /* no standardized syntax available, no ie-friendly solution available */
+}
+#datatableNotificacaoDetalhe tr {
+	cursor:pointer;
+}
+
+.segurados-form select + i.fas {
+  float: right;
+  margin-top: -30px;
+  margin-right: 5px;
+  pointer-events: none;
+  background-color: #fff;
+  padding-right: 5px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FF8908;
+}
+
+
+
+/* NOTIFICACOES FORM STYLES */
+.notificacoesDados-form label{
+	font-size: 14px;
+	margin-left: 20px;
+}
+.notificacoesDados-form .btn-group {
+	width: 100%;
+	border: solid 1px #C4C4C4;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+}
+.notificacoesDados-form .multiselect {
+	font-size: 14px;
+	color: #919191;
+	text-align: left!important;
+	padding: 6px 20px!important;
+}
+
+.notificacoesDados-form .multiselect-container {
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.notificacoesDados-form .multiselect .fas{
+	float: right;
+	font-size: 18px;
+	line-height: 24px;
+	color: #FF8908;
+}
+.notificacoesDados-form .dropdown-toggle::after {
+	content: none!important;
+}
+.notificacoesDados-form input.multiselect-search {
+	border:none!important;
+}
+.notificacoesDados-form .input-group-addon .fas{
+	line-height: 38px;
+}
+
+.notificacoesDados-form .multiselect-item .input-group{
+	border-bottom: solid 1px #999;
+	margin-bottom: 10px;
+}
+.notificacoesDados-form .multiselect-item a{
+	color:#212529!important;
+}
+.notificacoesDados-form .multiselect-container .checkbox{
+	color:#212529!important;
+}
+/* remove the original arrow */
+.notificacoesDados-form select.input-lg {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  /* no standardized syntax available, no ie-friendly solution available */
+}
+#datatableNotificacaoDetalhe tr {
+	cursor:pointer;
+}
+
+.notificacoesDados-form select + i.fas {
+  float: right;
+  margin-top: -30px;
+  margin-right: 5px;
+  pointer-events: none;
+  background-color: #fff;
+  padding-right: 5px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FF8908;
+}
+
+/*Stacked Icons */
+.input-group .fa-stack {
+	position: absolute;
+    top: 8px;
+    left: 10px;
+	height:24px;
+	width: 24px;
+	line-height: 24px;
+	z-index: 4;
+}
+.input-group .fa-stack-2x {
+	font-size: 24px;
+	color: #FF8908;
+}
+
+.input-group .fa-stack-1x {
+	font-size: 14px;
+}
+.tableConsultaLog .fa-stack {
+	height:28px;
+	line-height: 28px;
+	z-index: 4;
+}
+
+/* Datatable */
+.tableConsultaLog .fa-stack-2x {
+	font-size: 28px;
+	color: #FF8908;
+}
+
+.tableConsultaLog .fa-stack-1x {
+	font-size: 14px;
+}
+
+.bTable {
+	font-size:14px!important;
+	font-weight: lighter;
+}
+.bTable .success, a{ color:#338D00;}
+.bTable .processing, a{ color:#00428D;}
+.bTable .fail, a{ color:#FF0000;}
+.bTable .neutral, a{ color:#616161;}
+.bTable .info { color:#000;}
+.bTable .info a{ color:#000;}
+.bTable .info a:hover { color:#FF8908;}
+.bTable .alert, a{ color:#FF8908;}
+
+.result-content .fas {
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+
+.dataTables_info { width:50%; float:left; margin-bottom:20px; }
+.dataTables_wrapper .dataTables_paginate { width:50%;float:left; }
+.dataTables_wrapper .dataTables_paginate .paginate_button a{ padding: 6px 10px; border: solid 1px #FF8908!important; }
+.dataTables_wrapper .dataTables_paginate .paginate_button a{ color:#FF8908!important; } 
+.dataTables_wrapper .dataTables_paginate .paginate_button.active a{ background-color:#FF8908!important; } 
+.dataTables_wrapper .dataTables_paginate .paginate_button.active a { color:#fff!important; } 
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover { background-color:#FF8908!important;color:#fff!important; } 
+.dataTables_wrapper .dataTables_paginate .paginate_button a:hover { background-color:#FF8908!important;color:#fff!important; text-decoration: none; } 
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled a { color:#666!important; } 
+
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before { background-color:#FF8908!important; }
+
+@media only screen and (max-width: 770px) {
+	.dataTables_info { width:100%; float:left; margin-bottom:20px; }
+	.dataTables_wrapper .dataTables_paginate { width:100%;float:left; }
+}
+
+.dataTables_length { width: 33%; }
+.dataTables_length label { float:left; }
+div.dataTables_wrapper div.dataTables_length select { margin: 0 14px; }
+.dt-buttons { 
+	float:left; 
+	font-size: 12px;
+	width: 33%;
+}
+.dt-buttons button {
+	padding: 6px 8px;
+	background-color: #fff!important;
+	border:solid 1px #D4D4D4;
+}
+.dt-buttons button:hover {
+ 	background-color: #FF8908!important;
+}
+.dataTables_filter { width: 34%; }
+.dataTables_filter label { float:right; }
+
+.custom-select { margin: 0 10%; }
+
+.modal-detalhesLog span{ font-size: 18px; font-weight: bold; }
+.modal-detalhesLog p{ font-size: 14px; font-weight: ligher; }
+
+.modal-notificacoes span{ font-size: 14px; font-weight: bold; }
+.modal-notificacoes p{ font-size: 13px; font-weight: ligher; }
+
+
+@media only screen and (max-width: 980px) {
+  .dataTables_length { width: 50%; }
+  .dt-buttons { width: 50%; }
+  .dataTables_filter { width: 100%; margin:10px 0 0 0; }
+  .dataTables_filter label { float:left; }
+}
+
+@media only screen and (max-width: 600px) {
+  .dataTables_length { width: 100%; }
+  .dt-buttons { width: 100%; }
+  .dataTables_filter { width: 100%; margin:10px 0 0 0; }
+  .dataTables_filter label { float:left; }
+}
+
+.refReturn a {
+	color: #000;
+	text-align: right;
+	display: inline-flex;
+	float: right;
+}
+.refReturn a:hover {
+	text-decoration: none;
+	color: #FF8908;
+}
+.refReturn i {
+	padding-right: 10px;
+}
+
+footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    width: 100%;
+	padding-left: 80px;
+	background-color: #616161;
+	font-size: 14px;
+	line-height: 40px;
+	color:#fff;
+}
+@media only screen and (max-width: 770px) {
+	footer {
+			padding-left: 0px;
+	}
+}
+
+/* DETALHES SEGURADOS */
+
+.result-info {
+	margin:0 10px;
+	padding:20px;
+}
+.result-info span{
+	font-weight:bold;
+}
+.result-info p{
+	font-size:13px;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+	border-color: #FF8908;
+	background-color: #FF8908;
+}
+.btn-link {
+	color:#000;
+	text-decoration:none;
+	font-weight:bold;
+	white-space: nowrap;
+}
+.btn-link:hover {
+	color:#FF8908;
+	text-decoration:none;
+}
+
+.accordion-heading {
+	margin-left:-10px;
+	border-bottom:solid 1px #ccc;
+}
+
+/* Setas para o Accordion */
+.panel-title > button:before {
+    float: left !important;
+    font-family: FontAwesome;
+    content:"\f106";
+    padding-right: 5px;
+}
+.panel-title > button.collapsed:before {
+    float: left !important;
+    content:"\f107";
+}
+.panel-title > button:hover, 
+.panel-title > button:active, 
+.panel-title > button:focus  {
+    text-decoration:none;
+}
+
+
+.result-info .btn-group {
+	width: 100%;
+	border: solid 1px #C4C4C4;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+}
+.result-info .dropdown-toggle::after {
+	content: none!important;
+}
+.result-info .input-group-addon .fas{
+	line-height: 38px;
+}
+.result-info .fas {
+	font-size: 20px;
+	text-align: right!important;
+}
+
+/* remove the original arrow */
+.result-info select.input-lg {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  /* no standardized syntax available, no ie-friendly solution available */
+}
+
+.result-info select + i.fas {
+  float: right;
+  margin-top: -30px;
+  pointer-events: none;
+  padding-right: 5px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FF8908;
+}
+.result-info .search-btn {
+	margin-top: 0px;
+	border:solid 1px #C4C4C4;
+}
+
+.nav-pills .nav-link{
+	font-weight: lighter!important;
+	font-size: 16px;
+  	color: #bebebe;
+  	border: solid 1px #bebebe;
+  	background-color: transparent;
+  	margin-right:20px; 
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  	color: #FF8908;
+  	border: solid 1px #FF8908;
+  	background-color: transparent;
+}
+
+.table-link {
+	text-decoration: none;
+	color:#212529;	
+	font-weight: bold;
+}
+
+.table-link:hover {
+	text-decoration: none;
+	color:#FF8908;	
+}
